@@ -23,7 +23,7 @@ public class HotelInfo {
         System.out.println(myHotelList);
     }
 
-    public void CheapestHotelWeekDay(String startDateRange, String endDateRange) {
+    public void findCheapestHotelOne(String startDateRange, String endDateRange) {
 
         LocalDate startDate = LocalDate.parse(startDateRange, DateTimeFormatter.ofPattern("dd-MMM-yyyy"));
         LocalDate endDate = LocalDate.parse(endDateRange, DateTimeFormatter.ofPattern("dd-MMM-yyyy"));
@@ -40,7 +40,7 @@ public class HotelInfo {
 
     }
 
-    public void CheapestHotelWeekend(String startDateRange, String endDateRange) {
+    public void findCheapestHotelTwo(String startDateRange, String endDateRange) {
 
         LocalDate startDate = LocalDate.parse(startDateRange, DateTimeFormatter.ofPattern("dd-MMM-yyyy"));
         LocalDate endDate = LocalDate.parse(endDateRange, DateTimeFormatter.ofPattern("dd-MMM-yyyy"));
