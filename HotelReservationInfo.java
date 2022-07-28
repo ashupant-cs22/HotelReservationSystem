@@ -8,9 +8,19 @@ public class HotelReservationInfo {
         HotelInfo hotelInfo = new HotelInfo();
         hotelInfo.addHotel();
         System.out.println("Hotel Added");
-        System.out.println("Cheapest Hotel WeekdayRegularRate");
-        hotelInfo.CheapestHotelWeekDay("1-june-2022", "11-june-2022");
+
+        System.out.println("Cheapest Hotel Weekday Regular Rate");
+        hotelInfo.findCheapestHotelOne("10-Sep-2020", "11-Sep-2020");
+
         System.out.println("Cheapest Hotel Weekend Regular Rate");
-        hotelInfo.CheapestHotelWeekend("5-Sep-2020", "8-Sep-2020");
+        hotelInfo.findCheapestHotelTwo("11-Sep-2020", "12-Sep-2020");
+
+        System.out.println("Cheapest Hotel Based on Weekday Regular Rate");
+        hotelInfo.findCheapestHotelOne("10-Sep-2020", "11-Sep-2020");
+
+        System.out.println("Cheapest Hotel Based on Weekend Regular Rate");
+        hotelInfo.findCheapestHotelTwo("11-Sep-2020", "12-Sep-2020");
+
+
     }
 }
