@@ -21,6 +21,9 @@ public class HotelReservationInfo {
         System.out.println("Cheapest Hotel Based on Weekend Regular Rate");
         hotelInfo.findCheapestHotelTwo("11-Sep-2020", "12-Sep-2020");
 
+        System.out.println("Cheapest best Rated Hotel Based on WeekendRegularRate");
+        hotelInfo.findCheapestHotelRating("11-Sep-2020", "12-Sep-2020");
+
 
     }
 }
